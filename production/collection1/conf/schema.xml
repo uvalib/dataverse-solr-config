@@ -394,9 +394,9 @@
     <field name="sampleLearningGoals" type="text_en" multiValued="true" stored="true" indexed="true"/>
     <field name="samplingErrorEstimates" type="text_en" multiValued="false" stored="true" indexed="true"/>
     <field name="samplingProcedure" type="text_en" multiValued="false" stored="true" indexed="true"/>
-    <field name="series" type="text_en" multiValued="false" stored="true" indexed="true"/>
-    <field name="seriesInformation" type="text_en" multiValued="false" stored="true" indexed="true"/>
-    <field name="seriesName" type="text_en" multiValued="false" stored="true" indexed="true"/>
+    <field name="series" type="text_en" multiValued="true" stored="true" indexed="true"/>
+    <field name="seriesInformation" type="text_en" multiValued="true" stored="true" indexed="true"/>
+    <field name="seriesName" type="text_en" multiValued="true" stored="true" indexed="true"/>
     <field name="socialScienceNotes" type="text_en" multiValued="false" stored="true" indexed="true"/>
     <field name="socialScienceNotesSubject" type="text_en" multiValued="false" stored="true" indexed="true"/>
     <field name="socialScienceNotesText" type="text_en" multiValued="false" stored="true" indexed="true"/>
@@ -1179,7 +1179,6 @@
     <!-- Dataverse - per GeoBlacklight, adding field type for bboxField that enables, among other things, overlap ratio calculations -->
     <fieldType name="bbox" class="solr.BBoxField" geo="true" distanceUnits="kilometers" numberType="pdouble" />
     <!-- end of added lines for V5.13 -->
- 
 
     <!-- Payloaded field types -->
     <fieldType name="delimited_payloads_float" stored="false" indexed="true" class="solr.TextField">
